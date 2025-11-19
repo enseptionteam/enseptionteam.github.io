@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: indigo
+  color: blue
 
 # SEO
 marketing:
@@ -32,19 +32,19 @@ header:
     enable: true
     block: 'navbar'
     fixed_to_top: true
-    show_search: true
+    show_search: false
     show_theme_chooser: true
     logo:
-      text: 'Your Name'
+      text: 'EnSeption'
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} EnSeption. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization
