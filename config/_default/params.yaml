@@ -6,6 +6,8 @@
 # Appearance
 appearance:
   mode: dark
+  theme_night: true
+  theme_day: false
   color: blue
 
 # SEO
