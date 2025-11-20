@@ -1,12 +1,15 @@
 {{/* layouts/partials/hbx/blocks/team/block.html */}}
 
-{{- $block := . -}}                         {{/* In this Hugo Blox setup, `.` IS the block */}}
+{{/* Hugo Blox normally passes { page: <Page>, block: <block> } into block partials */}}
+{{- $page  := .page  | default .Page -}}
+{{- $block := .block | default . -}}
+
 {{- $content := $block.content | default dict -}}
-{{- $design := $block.design  | default dict -}}
-{{- $data := site.Data.team -}}
+{{- $design  := $block.design  | default dict -}}
+{{- $data    := site.Data.team -}}
 
 {{/* TEXT FROM FRONT MATTER */}}
-{{- $title := $content.title | default "Members" -}}
+{{- $title    := $content.title    | default "Members" -}}
 {{- $subtitle := $content.subtitle -}}
 
 {{/* LAYOUT/STYLING FROM FRONT MATTER */}}
@@ -100,10 +103,11 @@
                       {{- $url := .url -}}
                       {{- $label := .label | default $iconName -}}
                       {{- if $iconName }}
-                        {{- $shortcode := printf "{{< icon name=\"%s\" >}}" $iconName -}}
+                      {{- $shortcode := printf "{{< icon name=\"%s\" >}}" $iconName -}}
                         <a href="{{ $url }}" aria-label="{{ $label }}" class="text-gray-400 hover:text-gray-200">
-                          {{ $.Page.RenderString $shortcode | safeHTML }}
+                          {{ $page.RenderString $shortcode | safeHTML }}
                         </a>
+
                       {{- end -}}
                     {{ end }}
                   </div>
