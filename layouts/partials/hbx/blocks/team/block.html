@@ -1,0 +1,119 @@
+{{/* layouts/partials/hbx/blocks/team/block.html */}}
+{{- $page := .page -}}
+{{- $block := .block -}}
+{{- $content := $block.content | default dict -}}
+{{- $data := site.Data.team -}}
+
+{{/* Block title: support both content.title and block.title */}}
+{{- $title := cond (isset $content "title") $content.title $block.title -}}
+{{- $subtitle := $content.subtitle -}}
+
+{{/* Settings with defaults */}}
+{{- $align := $content.align | default "center" -}}
+{{- $columns := $content.columns | default 3 -}}
+{{- $nameColor := $content.name_color | default "text-gray-900" -}}
+
+{{/* Alignment -> Tailwind classes */}}
+{{- $itemsClass := "items-center" -}}
+{{- $textClass := "text-center" -}}
+{{- $justifyClass := "justify-items-center" -}}
+{{- if eq $align "left" -}}
+  {{- $itemsClass = "items-start" -}}
+  {{- $textClass = "text-left" -}}
+  {{- $justifyClass = "justify-items-start" -}}
+{{- else if eq $align "right" -}}
+  {{- $itemsClass = "items-end" -}}
+  {{- $textClass = "text-right" -}}
+  {{- $justifyClass = "justify-items-end" -}}
+{{- end -}}
+
+{{/* Columns -> Tailwind grid classes (static values so Tailwind picks them up) */}}
+{{- $lgColsClass := "lg:grid-cols-3" -}}
+{{- if eq $columns 1 -}}
+  {{- $lgColsClass = "lg:grid-cols-1" -}}
+{{- else if eq $columns 2 -}}
+  {{- $lgColsClass = "lg:grid-cols-2" -}}
+{{- else if eq $columns 4 -}}
+  {{- $lgColsClass = "lg:grid-cols-4" -}}
+{{- else if eq $columns 5 -}}
+  {{- $lgColsClass = "lg:grid-cols-5" -}}
+{{- end -}}
+
+<section id="{{ $block.id | default "team" }}" class="py-16">
+  <div class="max-w-5xl mx-auto px-4">
+
+    {{/* SECTION HEADING */}}
+    {{ with $title }}
+      <h2 class="text-4xl font-semibold text-center mb-2">{{ . }}</h2>
+    {{ end }}
+
+    {{ with $subtitle }}
+      <p class="text-xl text-gray-600 text-center mb-8">{{ . }}</p>
+    {{ end }}
+
+    {{ range $group := $data.groups }}
+      <div class="mt-12">
+
+        {{/* Group heading (e.g., Principal Investigators) */}}
+        <h3 class="text-2xl font-semibold text-center mb-6">
+          {{ $group.title }}
+        </h3>
+
+        <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 {{ $lgColsClass }} {{ $justifyClass }}">
+
+          {{ range $id := $group.members }}
+            {{ $person := index $data.people $id }}
+            {{ if not $person }}
+              {{ warnf "team block: no person found for id %q" $id }}
+            {{ else }}
+
+              <div class="flex flex-col {{ $itemsClass }} {{ $textClass }} max-w-xs">
+
+                {{ with $person.avatar }}
+                  <img src="{{ . | relURL }}"
+                       alt="Photo of {{ $person.name }}"
+                       class="w-32 h-32 rounded-full object-cover shadow mb-4">
+                {{ end }}
+
+                <h4 class="text-lg font-semibold {{ $nameColor }}">
+                  {{ $person.name }}
+                </h4>
+
+                {{ with $person.role }}
+                  <p class="text-sm text-gray-500 mb-2">{{ . }}</p>
+                {{ end }}
+
+                {{ with $person.interests }}
+                  <p class="text-sm text-gray-600 mb-3">
+                    {{ delimit . ", " }}
+                  </p>
+                {{ end }}
+
+                {{/* SOCIAL ICONS — uses same icon system as admin author `profiles` */}}
+                {{ with $person.profiles }}
+                  <div class="flex gap-4 mt-2 text-lg">
+                    {{ range . }}
+                      {{- $iconName := .icon -}}
+                      {{- $url := .url -}}
+                      {{- $label := .label | default $iconName -}}
+                      {{- if $iconName }}
+                        {{/* Use the Hugo Blox icon shortcode via RenderString so style matches publications, authors, etc. */}}
+                        {{- $shortcode := printf "{{< icon name=\"%s\" >}}" $iconName -}}
+                        <a href="{{ $url }}" aria-label="{{ $label }}" class="text-gray-500 hover:text-gray-800">
+                          {{ $page.RenderString $shortcode | safeHTML }}
+                        </a>
+                      {{- end -}}
+                    {{ end }}
+                  </div>
+                {{ end }}
+
+              </div>
+            {{ end }}
+          {{ end }}
+
+        </div>
+      </div>
+    {{ end }}
+
+  </div>
+</section>

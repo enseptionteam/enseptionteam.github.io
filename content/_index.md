@@ -87,6 +87,50 @@ sections:
         exclude_featured: false
     design:
       view: citation
+
+  # - block: markdown
+  #   id: team
+  #   content:
+  #     title: "The Team"
+  #     subtitle: "Meet our Team Members"
+  #     text: |-
+  #       ## Welcome
+        
+  #       This is **markdown content** that you can edit.
+        
+  #       - Create lists
+  #       - Add links
+  #       - Format text
+        
+  #       [Learn more](https://example.com)
+  #   design:
+  #     columns: "1"
+  #     background:
+  #       color: dark
+ 
+  - block: team
+    id: people
+    title: "Members"  # heading text
+    content:
+      subtitle: "Meet our members"
+      align: right    # center | left | right
+      columns: 3       # 1–5
+      name_color: "white"
+    #   user_groups:
+    #     - "Principal Investigators"
+    #     - "Researchers"
+    #     - "Grad Students"
+    #     - "Administration"
+    #     - "Visitors"
+    #     - "Alumni"
+    #   sort_by: "Params.last_name"
+    #   sort_ascending: true
+    # design:
+    #   show_social: true        # icons under each person
+    #   show_interests: true     # AI, CL, etc.
+    #   show_role: true
+    #   show_organizations: true
+
   # - block: collection
   #   id: talks
   #   content:

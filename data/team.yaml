@@ -1,0 +1,54 @@
+groups:
+  - id: principal-investigators
+    title: "Principal Investigators"
+    members:
+      - nelson
+  - id: researchers
+    title: "Researchers"
+    members:
+      - schrodingers-cat
+      - fan-bing
+
+people:
+  nelson:
+    name: "Nelson Bighetti"
+    role: "Professor of Artificial Intelligence"
+    avatar: "images/team/nelson.jpg"   # under static/
+    interests:
+      - "Artificial Intelligence"
+      - "Computational Linguistics"
+      - "Information Retrieval"
+    social:
+      email: "nelson@example.edu"
+      twitter: "https://twitter.com/nelson"
+      website: "https://example.com"
+      github: "https://github.com/nelson"
+
+  schrodingers-cat:
+    name: "Schrödinger's cat"
+    role: "Quantum cat"
+    avatar: "images/team/schrodinger-cat.jpg"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  fan-bing:
+    name: "范冰"
+    role: "Professor of Artificial Intelligence"
+    avatar: "images/team/fanbing.jpg"
+    interests:
+      - Artificial Intelligence
+      - Computational Linguistics
+      - Information Retrieval
+    profiles:
+      - icon: at-symbol
+        url: "mailto:fanbing@example.com"
+        label: "Email"
+      - icon: brands/x
+        url: "https://twitter.com/..."
+        label: "X"
