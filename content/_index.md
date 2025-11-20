@@ -110,8 +110,8 @@ sections:
  
   - block: team
     id: people
-    title: "Members"  # heading text
     content:
+      title: "Members"  # heading text
       subtitle: "Meet our members"
       align: right    # center | left | right
       columns: 3       # 1–5
