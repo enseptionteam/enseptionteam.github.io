@@ -1,19 +1,27 @@
 groups:
-  - id: principal-investigators
-    title: "Principal Investigators"
-    members:
-      - nelson
   - id: researchers
     title: "Researchers"
     members:
-      - schrodingers-cat
+      - jchiyoon
+      - mkyeongdeok
+      - pyunkyung
+      - kmooseop
+      - csugil
+      - ssungyong
+      - syoungmi
+      - wsungjun
+      - yhyeonbeom
+      - kmyungjin
+  - id: students
+    title: "Students"
+    members:
       - fan-bing
 
 people:
-  nelson:
-    name: "Nelson Bighetti"
-    role: "Professor of Artificial Intelligence"
-    avatar: "images/team/nelson.jpg"   # under static/
+  jchiyoon:
+    name: "Jeong, Chi Yoon"
+    role: "Director | Principal Researcher"
+    avatar: "images/team/jchiyoon.png"   # under static/
     interests:
       - "Artificial Intelligence"
       - "Computational Linguistics"
@@ -24,10 +32,23 @@ people:
       website: "https://example.com"
       github: "https://github.com/nelson"
 
-  schrodingers-cat:
-    name: "Schrödinger's cat"
-    role: "Quantum cat"
-    avatar: "images/team/schrodinger-cat.jpg"
+  mkyeongdeok:
+    name: "Moon, Kyeongdeok"
+    role: "Principal Researcher"
+    avatar: "images/team/mkyeongdeok.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+    
+  kmooseop:
+    name: "Kim, Mooseop"
+    role: "Principal Researcher"
+    avatar: "images/team/kmooseop.png"
     interests:
       - Quantum mechanics
       - Superposition
@@ -37,10 +58,102 @@ people:
         url: "https://github.com/example"
         label: "GitHub"
 
+  syoungmi:
+    name: "Song, Young Mi"
+    role: "Senior Researcher"
+    avatar: "images/team/syoungmi.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  ssungyong:
+    name: "Shin, Sungyong"
+    role: "Principal Researcher"
+    avatar: "images/team/ssungyong.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  yhyeonbeom:
+    name: "Yi, Hyeonbeom"
+    role: "Researcher"
+    avatar: "images/team/yhyeonbeom.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  kmyungjin:
+    name: "Kim, Myung Jin (MJ)"
+    role: "Post-doctoral Researcher"
+    avatar: "images/team/kmyungjin.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  csugil:
+    name: "Choi, Sugil"
+    role: "Principal Researcher"
+    avatar: "images/team/csugil.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  wsungjun:
+    name: "Wang, Sungjun"
+    role: "Researcher"
+    avatar: "images/team/wsungjun.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+
+  pyunkyung:
+    name: "Park, Yunkyung"
+    role: "Principal Researcher"
+    avatar: "images/team/pyunkyung.png"
+    interests:
+      - Quantum mechanics
+      - Superposition
+      - Thought experiments
+    profiles:
+      - icon: brands/github
+        url: "https://github.com/example"
+        label: "GitHub"
+    
+
   fan-bing:
-    name: "范冰"
-    role: "Professor of Artificial Intelligence"
-    avatar: "images/team/fanbing.jpg"
+    name: "Student"
+    role: "Undergraduate Intern"
+    avatar: "images/team/schrodinger-cat.jpg"
     interests:
       - Artificial Intelligence
       - Computational Linguistics

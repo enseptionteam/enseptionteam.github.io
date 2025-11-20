@@ -6,7 +6,9 @@
 # Appearance
 appearance:
   mode: dark
-  color: blue
+  theme_night: true
+  theme_day: false
+  color: yellow
 
 # SEO
 marketing:

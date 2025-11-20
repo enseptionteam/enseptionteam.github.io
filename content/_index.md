@@ -98,24 +98,26 @@ sections:
         
   #       This is **markdown content** that you can edit.
         
-  #       - Create lists
+  #       - Create value
   #       - Add links
   #       - Format text
         
   #       [Learn more](https://example.com)
   #   design:
   #     columns: "1"
-  #     background:
-  #       color: dark
  
   - block: team
     id: people
-    title: "Members"  # heading text
     content:
+      title: "Member"
       subtitle: "Meet our members"
-      align: right    # center | left | right
-      columns: 3       # 1–5
-      name_color: "white"
+    design:
+      align: center       # left | center | right  (controls group alignment)
+      columns: "2"        # "1"–"5" as strings, like other blocks
+      name_color: "text-black"   # Tailwind text color class
+
+
+      
     #   user_groups:
     #     - "Principal Investigators"
     #     - "Researchers"
