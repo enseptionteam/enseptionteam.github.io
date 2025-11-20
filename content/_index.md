@@ -13,27 +13,22 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-      text: 'At EnSeption, we conduct advanced research on AI models designed to analyze multimedia data such as images, video, and audio. Our work focuses not only on developing high-performance AI models, but also on addressing the practical challenges that arise during their deployment. These include insufficient training data, model bias, and performance degradation in real-world environments. To overcome these issues, we explore novel training methodologies as well as techniques for model optimization and lightweight deployment.
+      text: |-
+        At EnSeption, we conduct advanced research on AI models designed to analyze multimedia data such as images, video, and audio. Our work focuses not only on developing high-performance AI models, but also on addressing the practical challenges that arise during their deployment. These include insufficient training data, model bias, and performance degradation in real-world environments. To overcome these issues, we explore novel training methodologies as well as techniques for model optimization and lightweight deployment.
+        
+        We also investigate sensory substitution technologies, which aim to convey information from impaired or weakened sensory channels through alternative modalities. Alongside this, our research extends to wearable systems capable of supplementing or replacing human sensory functions, as well as technologies that enhance human perceptual capabilities more broadly.
+        
+        Below are examples of our recent publications and technical overviews:
+        
+        - [Human Visual Ability Enhancement Technology Trends and Development Prospects](https://dx.doi.org/10.22648/ETRI.2024.J.390407), Electronics and Telecommunications Trends, 39(4), 2024.
+        - [감각대체를 통한 포용적 기술 개발 (Inclusive Technology Development through Sensory Substitution)](https://kist.re.kr/fcsc/publication/research-review.do?mode=view&articleNo=13089&article.offset=0&articleLimit=10), Convergence Research Review, 10(4), 2024.
+  
+        We welcome passionate researchers to join our laboratory through the following programs:
+
+        - UST–ETRI School Graduate Programs: M.S., Ph.D., and integrated M.S.–Ph.D. programs in Artificial Intelligence
+        - ETRI Post-Master’s / Post-Doctoral Fellowship Programs: For graduates holding M.S. or Ph.D. degrees
+        - ETRI Research Internship: For third- and fourth-year undergraduate students, offering a two-month immersive research experience during the summer or winter break
       
-
-      We also investigate sensory substitution technologies, which aim to convey information from impaired or weakened sensory channels through alternative modalities. Alongside this, our research extends to wearable systems capable of supplementing or replacing human sensory functions, as well as technologies that enhance human perceptual capabilities more broadly.
-      
-
-      Below are examples of our recent publications and technical overviews:
-
-      - [Human Visual Ability Enhancement Technology Trends and Development Prospects](https://dx.doi.org/10.22648/ETRI.2024.J.390407), Electronics and Telecommunications Trends, 39(4), 2024.
-  
-      - [감각대체를 통한 포용적 기술 개발 (Inclusive Technology Development through Sensory Substitution)](https://kist.re.kr/fcsc/publication/research-review.do?mode=view&articleNo=13089&article.offset=0&articleLimit=10), Convergence Research Review, 10(4), 2024.
-  
-  
-      We welcome passionate researchers to join our laboratory through the following programs:
-
-      - UST–ETRI School Graduate Programs: M.S., Ph.D., and integrated M.S.–Ph.D. programs in Artificial Intelligence
-  
-      - ETRI Post-Master’s / Post-Doctoral Fellowship Programs: For graduates holding M.S. or Ph.D. degrees
-  
-      - ETRI Research Internship: For third- and fourth-year undergraduate students, offering a two-month immersive research experience during the summer or winter break
-      '
 
       # Show a call-to-action button under your biography? (optional)
       # button:
@@ -44,16 +39,6 @@ sections:
         education: ''
         interests: ''
     design:
-      # # Apply a gradient background
-      # css_class: hbx-bg-gradient
-      background:
-        image:
-          filename: background.jpg
-          size: cover
-          position: center
-          parallax: true
-          text_color_light: true
-
       # # Apply a gradient background
       # css_class: hbx-bg-gradient
       background:
@@ -93,9 +78,7 @@ sections:
   #     columns: 2
   - block: collection
     id: publications
-    id: publications
     content:
-      title: Publications
       title: Publications
       text: ''
       filters:
