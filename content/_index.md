@@ -54,6 +54,16 @@ sections:
           parallax: true
           text_color_light: true
 
+      # # Apply a gradient background
+      # css_class: hbx-bg-gradient
+      background:
+        image:
+          filename: background.jpg
+          size: cover
+          position: center
+          parallax: true
+          text_color_light: true
+
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
@@ -83,7 +93,9 @@ sections:
   #     columns: 2
   - block: collection
     id: publications
+    id: publications
     content:
+      title: Publications
       title: Publications
       text: ''
       filters:
