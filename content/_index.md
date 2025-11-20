@@ -109,8 +109,8 @@ sections:
   - block: team
     id: people
     content:
-      title: "Member"
-      subtitle: "Meet our members"
+      title: "TEAM DEBUG"
+      subtitle: "If you see this, we're using this block."
     design:
       align: center       # left | center | right  (controls group alignment)
       columns: "2"        # "1"–"5" as strings, like other blocks
