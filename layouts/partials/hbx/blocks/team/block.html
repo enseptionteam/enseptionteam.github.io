@@ -1,125 +1,187 @@
 {{/* layouts/partials/hbx/blocks/team/block.html */}}
 
-{{/* Hugo Blox normally passes { page: <Page>, block: <block> } into block partials */}}
-{{- $page  := .page  | default .Page -}}
-{{- $block := .block | default . -}}
+{{/* -------------------------------------------------
+   Context normalization:
+   - Hugo Blox often calls block partials with: { page: <Page>, block: <Block> }
+   - Sometimes themes call them directly with just <Block> and .Page still set.
+   This section makes it work in both cases.
+   ------------------------------------------------- */}}
+
+{{- $ctx := . -}}
+
+{{- $block := $ctx -}}
+{{- with $ctx.block }}
+  {{- $block = . -}}
+{{- end }}
+
+{{- $page := $ctx.Page -}}
+{{- with $ctx.page }}
+  {{- $page = . -}}
+{{- end }}
+
+{{- if not $page }}
+  {{- $page = .Page -}}
+{{- end }}
+
+{{/* -------------------------------------------------
+   Read block content & design from front matter
+   ------------------------------------------------- */}}
 
 {{- $content := $block.content | default dict -}}
 {{- $design  := $block.design  | default dict -}}
-{{- $data    := site.Data.team -}}
+{{- $data    := site.Data.team  | default dict -}}
 
-{{/* TEXT FROM FRONT MATTER */}}
 {{- $title    := $content.title    | default "Members" -}}
 {{- $subtitle := $content.subtitle -}}
 
-{{/* LAYOUT/STYLING FROM FRONT MATTER */}}
-{{- $columns := $design.columns   | default "3" -}}
-{{- $align   := $design.align     | default "center" -}}
+{{- $columns   := $design.columns    | default "3" -}}
+{{- $align     := $design.align      | default "center" -}}
 {{- $nameColor := $design.name_color | default "text-white" -}}
 
-{{/* Alignment -> Tailwind classes */}}
-{{- $itemsClass := "items-center" -}}
-{{- $textClass := "text-center" -}}
+{{/* -------------------------------------------------
+   Layout classes based on align & columns
+   ------------------------------------------------- */}}
+
+{{- $itemsClass   := "items-center" -}}
+{{- $textClass    := "text-center" -}}
 {{- $justifyClass := "justify-items-center" -}}
 
-{{- if eq $align "left" -}}
-  {{- $itemsClass = "items-start" -}}
-  {{- $textClass = "text-left" -}}
+{{- if eq $align "left" }}
+  {{- $itemsClass   = "items-start" -}}
+  {{- $textClass    = "text-left" -}}
   {{- $justifyClass = "justify-items-start" -}}
-{{- else if eq $align "right" -}}
-  {{- $itemsClass = "items-end" -}}
-  {{- $textClass = "text-right" -}}
+{{- else if eq $align "right" }}
+  {{- $itemsClass   = "items-end" -}}
+  {{- $textClass    = "text-right" -}}
   {{- $justifyClass = "justify-items-end" -}}
-{{- end -}}
+{{- end }}
 
-{{/* Columns -> Tailwind grid classes (string OR number) */}}
 {{- $lgColsClass := "lg:grid-cols-3" -}}
-{{- if or (eq $columns "1") (eq $columns 1) -}}
+{{- if or (eq $columns "1") (eq $columns 1) }}
   {{- $lgColsClass = "lg:grid-cols-1" -}}
-{{- else if or (eq $columns "2") (eq $columns 2) -}}
+{{- else if or (eq $columns "2") (eq $columns 2) }}
   {{- $lgColsClass = "lg:grid-cols-2" -}}
-{{- else if or (eq $columns "4") (eq $columns 4) -}}
+{{- else if or (eq $columns "3") (eq $columns 3) }}
+  {{- $lgColsClass = "lg:grid-cols-3" -}}
+{{- else if or (eq $columns "4") (eq $columns 4) }}
   {{- $lgColsClass = "lg:grid-cols-4" -}}
-{{- else if or (eq $columns "5") (eq $columns 5) -}}
+{{- else if or (eq $columns "5") (eq $columns 5) }}
   {{- $lgColsClass = "lg:grid-cols-5" -}}
-{{- end -}}
+{{- end }}
 
-<section id="{{ $block.id | default "team" }}" class="py-16">
-  <div class="max-w-5xl mx-auto px-4">
+<section class="py-16 bg-transparent">
+  <div class="container mx-auto px-4">
+    {{/* Section title from _index.md */}}
+    <div class="mb-12">
+      <h2 class="text-4xl font-semibold text-center mb-2">
+        {{ $title }}
+      </h2>
 
-    {{/* SECTION HEADING */}}
-    <h2 class="text-4xl font-semibold text-center mb-2">
-      {{ $title }}
-    </h2>
+      {{- with $subtitle }}
+        <p class="text-xl text-gray-400 text-center mb-8">
+          {{ . }}
+        </p>
+      {{- end }}
+    </div>
 
-    {{ with $subtitle }}
-      <p class="text-xl text-gray-400 text-center mb-8">
-        {{ . }}
+    {{/* Safety: check we actually have data/team.yaml */}}
+    {{- if not $data.groups }}
+      <p class="text-center text-gray-400">
+        No team data found. Make sure <code>data/team.yaml</code> defines <code>groups</code> and <code>people</code>.
       </p>
-    {{ end }}
+    {{- else }}
 
-    {{ range $group := $data.groups }}
-      <div class="mt-12">
-        <h3 class="text-2xl font-semibold text-center mb-6">
-          {{ $group.title }}
-        </h3>
+      {{/* Loop through groups defined in data/team.yaml */}}
+      {{- range $group := $data.groups }}
+        <div class="mb-12">
 
-        <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 {{ $lgColsClass }} {{ $justifyClass }}">
+          {{- with $group.title }}
+            <h3 class="text-2xl font-semibold text-center mb-6">
+              {{ . }}
+            </h3>
+          {{- end }}
 
-          {{ range $id := $group.members }}
-            {{ $person := index $data.people $id }}
-            {{ if not $person }}
-              {{ warnf "team block: no person found for id %q" $id }}
-            {{ else }}
+          <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 {{ $lgColsClass }} {{ $justifyClass }}">
+            {{- range $id := $group.members }}
+              {{- $person := index $data.people $id -}}
+              {{- if $person }}
 
-              <div class="flex flex-col {{ $itemsClass }} {{ $textClass }} max-w-xs">
+                <article class="flex flex-col {{ $itemsClass }} {{ $textClass }} max-w-xs mx-auto">
+                  {{/* Avatar */}}
+                  {{- with $person.avatar }}
+                    <div class="mb-4">
+                      <img
+                        src="{{ . | relURL }}"
+                        alt="{{ $person.name }}"
+                        class="w-32 h-32 rounded-full object-cover mx-auto"
+                      />
+                    </div>
+                  {{- end }}
 
-                {{ with $person.avatar }}
-                  <img src="{{ . | relURL }}"
-                       alt="Photo of {{ $person.name }}"
-                       class="w-32 h-32 rounded-full object-cover shadow mb-4">
-                {{ end }}
+                  {{/* Name */}}
+                  <h4 class="text-lg font-semibold {{ $nameColor }}">
+                    {{ $person.name }}
+                  </h4>
 
-                <h4 class="text-lg font-semibold {{ $nameColor }}">
-                  {{ $person.name }}
-                </h4>
+                  {{/* Role */}}
+                  {{- with $person.role }}
+                    <p class="text-sm text-gray-400 mt-1">
+                      {{ . }}
+                    </p>
+                  {{- end }}
 
-                {{ with $person.role }}
-                  <p class="text-sm text-gray-400 mb-2">
-                    {{ . }}
-                  </p>
-                {{ end }}
+                  {{/* Organizations */}}
+                  {{- with $person.organizations }}
+                    <p class="text-xs text-gray-500 mt-1">
+                      {{ delimit . ", " }}
+                    </p>
+                  {{- end }}
 
-                {{ with $person.interests }}
-                  <p class="text-sm text-gray-400 mb-3">
-                    {{ delimit . ", " }}
-                  </p>
-                {{ end }}
+                  {{/* Interests */}}
+                  {{- with $person.interests }}
+                    <div class="flex flex-wrap gap-2 mt-3">
+                      {{- range . }}
+                        <span class="text-xs px-2 py-1 rounded-full bg-gray-800 text-gray-300">
+                          {{ . }}
+                        </span>
+                      {{- end }}
+                    </div>
+                  {{- end }}
 
-                {{ with $person.profiles }}
-                  <div class="flex gap-4 mt-2 text-lg">
-                    {{ range . }}
-                      {{- $iconName := .icon -}}
-                      {{- $url := .url -}}
-                      {{- $label := .label | default $iconName -}}
-                      {{- if $iconName }}
-                      {{- $shortcode := printf "{{< icon name=\"%s\" >}}" $iconName -}}
-                        <a href="{{ $url }}" aria-label="{{ $label }}" class="text-gray-400 hover:text-gray-200">
-                          {{ $page.RenderString $shortcode | safeHTML }}
-                        </a>
+                  {{/* Profiles / social links */}}
+                  {{- $profiles := $person.profiles -}}
+                  {{- with $person.social }}
+                    {{- if not $profiles }}
+                      {{- $profiles = . -}}
+                    {{- end }}
+                  {{- end }}
 
-                      {{- end -}}
-                    {{ end }}
-                  </div>
-                {{ end }}
+                  {{- with $profiles }}
+                    <div class="flex flex-row gap-3 mt-4">
+                      {{- range . }}
+                        {{- $url   := .url   | default .link | default "#" -}}
+                        {{- $label := .label | default .network | default "Link" -}}
+                        {{- if $url }}
+                          <a
+                            href="{{ $url }}"
+                            class="text-gray-400 hover:text-gray-200 text-sm underline"
+                            aria-label="{{ $label }}"
+                            target="_blank" rel="noopener noreferrer"
+                          >
+                            {{ $label }}
+                          </a>
+                        {{- end }}
+                      {{- end }}
+                    </div>
+                  {{- end }}
+                </article>
 
-              </div>
-            {{ end }}
-          {{ end }}
-
+              {{- end }}
+            {{- end }}
+          </div>
         </div>
-      </div>
-    {{ end }}
+      {{- end }}
 
+    {{- end }}
   </div>
 </section>
