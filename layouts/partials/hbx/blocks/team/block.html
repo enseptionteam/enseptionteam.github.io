@@ -80,6 +80,7 @@
                   {{- end }}
 
                   {{/* Social / URL links as visible text chips; also *try* icon shortcode if it ever works */}}
+                                    {{/* Social / URL links ... */}}
                   {{- with $person.profiles }}
                     <div class="flex flex-wrap gap-2 mt-4 justify-center">
                       {{- range . }}
@@ -87,7 +88,6 @@
                         {{- $icon  := .icon  | default "" -}}
                         {{- $label := .label | default "" -}}
                         {{- if $url }}
-                          {{/* Optional: try to render the icon shortcode; may be empty */}}
                           {{- $iconHTML := "" -}}
                           {{- if and $icon $page }}
                             {{- $shortcode := printf "{{< icon name=\"%s\" >}}" $icon -}}
@@ -100,7 +100,6 @@
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            {{/* If the icon ever renders, show it before the label; if not, you still have the label text */}}
                             {{- if $iconHTML }}
                               <span class="inline-block">
                                 {{ $iconHTML | safeHTML }}
@@ -108,25 +107,20 @@
                             {{- end }}
                             <span>{{ $label }}</span>
                           </a>
-                        {{- end }}
-                      {{- end }}
+                        {{- end }}       
+                      {{- end }}         
                     </div>
-                  {{- end }}
-
+                  {{- end }}             
 
                 </article>
 
-              {{- end }}
-            {{- end }}
-          </div>
-              {{- end }}
-            {{- end }}
-          </div>
-        </div>
-      {{- end }}
-      {{- end }}
+              {{- end }}               
+            {{- end }}                 
+          </div>                       
+        </div>                         
 
-    {{- end }}
-    {{- end }}
-  </div>
+      {{- end }}                       
+
+    {{- end }}                         
+  </div>                               
 </section>
