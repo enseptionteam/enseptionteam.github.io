@@ -107,15 +107,7 @@ sections:
   #     columns: "1"
  
   - block: team
-    id: people
-    content:
-      title: "Member"
-      subtitle: "Meet our members"
-    design:
-      align: center       # left | center | right  (controls group alignment)
-      columns: "2"        # "1"–"5" as strings, like other blocks
-      name_color: "text-black"   # Tailwind text color class
-
+    id: team
 
       
     #   user_groups:

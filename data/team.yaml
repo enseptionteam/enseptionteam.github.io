@@ -15,153 +15,123 @@ groups:
   - id: students
     title: "Students"
     members:
-      - fan-bing
+      - lhyeju
 
 people:
   jchiyoon:
     name: "Jeong, Chi Yoon"
     role: "Director | Principal Researcher"
     avatar: "images/team/jchiyoon.png"   # under static/
-    interests:
-      - "Artificial Intelligence"
-      - "Computational Linguistics"
-      - "Information Retrieval"
-    social:
-      email: "nelson@example.edu"
-      twitter: "https://twitter.com/nelson"
-      website: "https://example.com"
-      github: "https://github.com/nelson"
+    # interests:
+    #   - "Artificial Intelligence"
+    #   - "Computational Linguistics"
+    #   - "Information Retrieval"
+    profiles:
+      - url: "https://ksp.etri.re.kr/ksp/user/062c80de-71ef-41e6-a93b-790be36c57bd" 
+        label: "ETRI-KSP"
+
+      - url: "https://scholar.google.co.kr/citations?hl=en&user=XhIK2LgAAAAJ" 
+        label: "Google Scholar"
+
+      - url: "https://orcid.org/0000-0001-7089-2516" 
+        label: "ORCiD"
 
   mkyeongdeok:
     name: "Moon, Kyeongdeok"
     role: "Principal Researcher"
     avatar: "images/team/mkyeongdeok.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/cb9f6f30-affb-49c3-bbb8-0c0614058296" 
+        label: "ETRI-KSP"
     
   kmooseop:
     name: "Kim, Mooseop"
     role: "Principal Researcher"
     avatar: "images/team/kmooseop.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/7114cbf5-da34-47e4-ac70-89da7a32b2bf" 
+        label: "ETRI-KSP"
+
+      - url: "https://scholar.google.co.kr/citations?user=4pNu51IAAAAJ" 
+        label: "Google Scholar"
+
+      - url: "https://orcid.org/0000-0003-4914-0584" 
+        label: "ORCiD"
 
   syoungmi:
     name: "Song, Young Mi"
     role: "Senior Researcher"
     avatar: "images/team/syoungmi.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/5d838bea-5ff4-4479-b93a-72ab1b758ce7" 
+        label: "ETRI-KSP"
 
   ssungyong:
     name: "Shin, Sungyong"
     role: "Principal Researcher"
     avatar: "images/team/ssungyong.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/3c6ce72b-7e07-455b-a14a-b219dca6658e" 
+        label: "ETRI-KSP"
+      - url: "https://orcid.org/0000-0001-8263-3378" 
+        label: "ORCiD"
 
   yhyeonbeom:
     name: "Yi, Hyeonbeom"
     role: "Researcher"
     avatar: "images/team/yhyeonbeom.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/f1b4e017-1da9-470a-b929-eae16e81d9d6" 
+        label: "ETRI-KSP"
+      - url: "https://scholar.google.com/citations?user=fV53uIUAAAAJ" 
+        label: "Google Scholar"
+      - url: "https://orcid.org/0000-0003-1108-0045" 
+        label: "ORCiD"
 
   kmyungjin:
     name: "Kim, Myung Jin (MJ)"
     role: "Post-doctoral Researcher"
     avatar: "images/team/kmyungjin.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/6d48eac6-c242-4b32-b8c8-fd10edce5094" 
+        label: "ETRI-KSP"
+      - url: "https://scholar.google.com/citations?user=ypCkHjEAAAAJ" 
+        label: "Google Scholar"
+      - url: "https://orcid.org/0000-0001-9970-4056" 
+        label: "ORCiD"
 
   csugil:
     name: "Choi, Sugil"
     role: "Principal Researcher"
     avatar: "images/team/csugil.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/7378ca7f-da93-43fb-b22a-3787c5a83a8f" 
+        label: "ETRI-KSP"
 
   wsungjun:
     name: "Wang, Sungjun"
     role: "Researcher"
     avatar: "images/team/wsungjun.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/754c6583-b368-4e01-8371-4a650e416598" 
+        label: "ETRI-KSP"
+      - url: "https://scholar.google.co.kr/citations?user=kR-81yAAAAAJ" 
+        label: "Google Scholar"
 
   pyunkyung:
     name: "Park, Yunkyung"
     role: "Principal Researcher"
     avatar: "images/team/pyunkyung.png"
-    interests:
-      - Quantum mechanics
-      - Superposition
-      - Thought experiments
     profiles:
-      - icon: brands/github
-        url: "https://github.com/example"
-        label: "GitHub"
+      - url: "https://ksp.etri.re.kr/ksp/user/41208274-fae4-45da-b76d-f2127da30a01" 
+        label: "ETRI-KSP"
+    
     
 
-  fan-bing:
-    name: "Student"
-    role: "Undergraduate Intern"
-    avatar: "images/team/schrodinger-cat.jpg"
-    interests:
-      - Artificial Intelligence
-      - Computational Linguistics
-      - Information Retrieval
+  lhyeju:
+    name: "Lee, Hyeju"
+    role: "UST Research Student"
+    avatar: "images/team/lhyeju.png"
     profiles:
-      - icon: at-symbol
-        url: "mailto:fanbing@example.com"
-        label: "Email"
-      - icon: brands/x
-        url: "https://twitter.com/..."
-        label: "X"
+      - url: "https://ksp.etri.re.kr/ksp/user/513b4a39-0fe1-4004-9088-a65d289ff70b" 
+        label: "ETRI-KSP"

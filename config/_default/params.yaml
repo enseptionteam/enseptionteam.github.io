@@ -8,7 +8,7 @@ appearance:
   mode: dark
   theme_night: true
   theme_day: false
-  color: yellow
+  color: sky
 
 # SEO
 marketing:
