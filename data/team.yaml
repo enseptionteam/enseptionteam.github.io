@@ -30,7 +30,7 @@ people:
       - url: "https://ksp.etri.re.kr/ksp/user/062c80de-71ef-41e6-a93b-790be36c57bd" 
         label: "ETRI-KSP"
 
-      - url: "https://scholar.google.co.kr/citations?hl=en&user=XhIK2LgAAAAJ" 
+      - url: "https://scholar.google.co.kr/citations?hl=en&user=XhIK2LgAAAAJ&sortby=pubdate" 
         label: "Google Scholar"
 
       - url: "https://orcid.org/0000-0001-7089-2516" 
@@ -52,7 +52,7 @@ people:
       - url: "https://ksp.etri.re.kr/ksp/user/7114cbf5-da34-47e4-ac70-89da7a32b2bf" 
         label: "ETRI-KSP"
 
-      - url: "https://scholar.google.co.kr/citations?user=4pNu51IAAAAJ" 
+      - url: "https://scholar.google.co.kr/citations?user=4pNu51IAAAAJ&sortby=pubdate" 
         label: "Google Scholar"
 
       - url: "https://orcid.org/0000-0003-4914-0584" 
@@ -83,7 +83,7 @@ people:
     profiles:
       - url: "https://ksp.etri.re.kr/ksp/user/f1b4e017-1da9-470a-b929-eae16e81d9d6" 
         label: "ETRI-KSP"
-      - url: "https://scholar.google.com/citations?user=fV53uIUAAAAJ" 
+      - url: "https://scholar.google.com/citations?user=fV53uIUAAAAJ&sortby=pubdate" 
         label: "Google Scholar"
       - url: "https://orcid.org/0000-0003-1108-0045" 
         label: "ORCiD"
@@ -95,7 +95,7 @@ people:
     profiles:
       - url: "https://ksp.etri.re.kr/ksp/user/6d48eac6-c242-4b32-b8c8-fd10edce5094" 
         label: "ETRI-KSP"
-      - url: "https://scholar.google.com/citations?user=ypCkHjEAAAAJ" 
+      - url: "https://scholar.google.com/citations?user=ypCkHjEAAAAJ&sortby=pubdate" 
         label: "Google Scholar"
       - url: "https://orcid.org/0000-0001-9970-4056" 
         label: "ORCiD"
@@ -115,7 +115,7 @@ people:
     profiles:
       - url: "https://ksp.etri.re.kr/ksp/user/754c6583-b368-4e01-8371-4a650e416598" 
         label: "ETRI-KSP"
-      - url: "https://scholar.google.co.kr/citations?user=kR-81yAAAAAJ" 
+      - url: "https://scholar.google.co.kr/citations?user=kR-81yAAAAAJ&sortby=pubdate" 
         label: "Google Scholar"
 
   pyunkyung:
