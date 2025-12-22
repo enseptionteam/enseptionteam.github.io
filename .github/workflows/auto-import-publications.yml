@@ -1,0 +1,37 @@
+name: Auto-import Publications
+
+on:
+  push:
+    branches:
+      - main # 기본 브랜치 이름 (master일 수도 있음)
+    paths:
+      - 'static/files/publications.bib' # 추적할 BibTeX 파일 경로 지정
+
+jobs:
+  import-academic-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install academic CLI
+        run: pip install academic
+
+      - name: Run Academic (Bibtex To Markdown Converter)
+        run: academic import publications.bib content/publications/ #--compact # 실제 경로에 맞게 수정
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Automated: Import latest publications from BibTeX'
+          branch: main # 변경 사항을 커밋할 브랜치
+
+      # - name: Trigger GitHub Pages rebuild (optional)
+      #   run: |
+      #     # GitHub Pages는 일반적으로 main 브랜치에 푸시될 때 자동 빌드되므로 이 단계는 필요 없을 수도 있습니다.
+      #     # 필요한 경우, 추가적인 빌드 트리거 스크립트를 여기에 추가할 수 있습니다.
