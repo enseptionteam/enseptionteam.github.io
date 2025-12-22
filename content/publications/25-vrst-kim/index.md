@@ -16,10 +16,10 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-01'
+date: '2025-12-04'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-12-22T05:18:01.695597Z'
+publishDate: '2025-12-22T05:30:07.594649Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -29,9 +29,8 @@ publication_types:
 # Publication name and optional abbreviated publication name.
 publication: '*Proceedings of the 2025 31st ACM Symposium on Virtual Reality Software
   and Technology*'
-publication_short: ''
+publication_short: 'ACM VRST 2025'
 
-doi: 10.1145/3756884.3770536
 
 abstract: 'We present a virtual reality (VR) training system that supports safe mobility
   skill development for low-vision users through visual-to-auditory sensory substitution.
@@ -59,11 +58,11 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3756884.3770536'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/visionaugmentation'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -86,9 +85,12 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: URL
-  url: https://doi.org/10.1145/3756884.3770536
+hugoblox:
+  ids:
+    doi: 10.1145/3756884.3770536
+# links:
+# - name: URL
+#   url: https://doi.org/10.1145/3756884.3770536
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

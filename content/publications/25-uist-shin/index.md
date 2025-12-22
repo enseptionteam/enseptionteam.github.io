@@ -18,10 +18,10 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-01'
+date: '2025-09-27'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-12-22T05:18:01.687256Z'
+publishDate: '2025-12-22T05:30:07.588171Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -31,9 +31,8 @@ publication_types:
 # Publication name and optional abbreviated publication name.
 publication: '*Adjunct Proceedings of the 38th Annual ACM Symposium on User Interface
   Software and Technology*'
-publication_short: ''
+publication_short: 'ACM UIST 2025'
 
-doi: 10.1145/3746058.3758996
 
 abstract: This study presents a novel approach to improving musical haptic wearables
   by applying deep learning models for music source separation and pitch estimation.
@@ -58,11 +57,11 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3746058.3758996'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/musicaccessibility'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -85,9 +84,12 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: URL
-  url: https://doi.org/10.1145/3746058.3758996
+hugoblox:
+  ids:
+    doi: 10.1145/3746058.3758996
+# links:
+# - name: URL
+#   url: https://doi.org/10.1145/3746058.3758996
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

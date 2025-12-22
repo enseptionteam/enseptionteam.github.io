@@ -19,7 +19,7 @@ author_notes: []
 date: '2024-06-26'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-12-22T05:18:01.679067Z'
+publishDate: '2025-12-22T05:30:07.581679Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -30,7 +30,6 @@ publication_types:
 publication: '*IEEE Access*'
 publication_short: ''
 
-doi: 10.1109/ACCESS.2024.3419102
 
 abstract: Recent studies have revealed that visual-auditory sensory substitution devices
   (SSDs) can effectively convey visual information to visually impaired or blind individuals
@@ -51,15 +50,24 @@ abstract: Recent studies have revealed that visual-auditory sensory substitution
 summary: ''
 
 tags:
-- Visualization;Training;Headphones;Deep learning;Wireless sensor networks;Wireless
-  communication;Sensitivity;Sensor systems;Audio-visual systems;Sensory substitution;visual-auditory
-  conversion;visual perception
+- visualization
+- training
+- headphones
+- deep learning
+- wireless sensor networks
+- wireless communication
+- sensitivity
+- sensor systems
+- audio-visual systems
+- sensory substitution
+- visual-auditory conversion
+- visual perception
 
 # Display this page in a list of Featured pages?
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10571914'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -86,6 +94,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+hugoblox:
+  ids:
+    doi: 10.1109/ACCESS.2024.3419102
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

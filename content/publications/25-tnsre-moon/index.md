@@ -19,7 +19,7 @@ author_notes: []
 date: '2025-03-06'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-12-22T05:18:01.650887Z'
+publishDate: '2025-12-22T05:30:07.560224Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -28,9 +28,8 @@ publication_types:
 
 # Publication name and optional abbreviated publication name.
 publication: '*IEEE Transactions on Neural Systems and Rehabilitation Engineering*'
-publication_short: ''
+publication_short: 'IEEE TNSRE 2025'
 
-doi: 10.1109/TNSRE.2025.3548942
 
 abstract: The visual sensory organ (VSO) serves as the primary channel for transmitting
   external information to the brain; therefore, damage to the VSO can severely limit
@@ -58,15 +57,24 @@ abstract: The visual sensory organ (VSO) serves as the primary channel for trans
 summary: ''
 
 tags:
-- Visualization;Training;Brain modeling;Neuroplasticity;Biological system modeling;Adaptation
-  models;Image coding;Visual impairment;Auditory system;Sensor systems;Learning model
-  for sensory substitution;neuroplasticity;vision-to-auditory sensory substitution
+- visualization
+- training
+- brain modeling
+- neuroplasticity
+- biological system modeling
+- adaptation models
+- image coding
+- visual impairment
+- auditory system
+- sensor systems
+- learning model for sensory substitution
+- vision-to-auditory sensory substitution
 
 # Display this page in a list of Featured pages?
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10915707'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -93,6 +101,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+hugoblox:
+  ids:
+    doi: 10.1109/TNSRE.2025.3548942
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

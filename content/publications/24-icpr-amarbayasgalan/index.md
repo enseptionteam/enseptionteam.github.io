@@ -17,7 +17,7 @@ author_notes: []
 date: '2024-12-03'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-12-22T05:18:01.670756Z'
+publishDate: '2025-12-22T05:30:07.575148Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -28,7 +28,6 @@ publication_types:
 publication: '*Pattern Recognition*'
 publication_short: ''
 
-doi: https://doi.org/10.1007/978-3-031-78447-7_11
 
 abstract: Scale imbalance, where objects of different sizes are not equally represented
   in a dataset, is a common problem in real-world object detection scenarios that
@@ -54,7 +53,19 @@ abstract: Scale imbalance, where objects of different sizes are not equally rep
 # Summary. An optional shortened abstract.
 summary: ''
 
-tags: []
+tags:
+  - object detection
+  - scale imbalance
+  - YOLOF (You Only Look One-Level Feature)
+  - dilated attention
+  - single-in-single-out architecture (SiSo)
+  - real-time applications
+  - computer vision
+  - convolutional neural networks (CNNs)
+  - deep learning
+  - feature representation
+  - dataset evaluation (MS COCO, PASCAL VOC)
+  - average precision metrics
 
 # Display this page in a list of Featured pages?
 featured: false
@@ -87,6 +98,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+hugoblox:
+  ids:
+    doi: https://doi.org/10.1007/978-3-031-78447-7_11
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

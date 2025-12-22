@@ -19,7 +19,7 @@ author_notes: []
 date: '2025-09-14'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2025-12-22T05:18:01.662325Z'
+publishDate: '2025-12-22T05:30:07.568545Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -28,9 +28,8 @@ publication_types:
 
 # Publication name and optional abbreviated publication name.
 publication: '*2025 IEEE International Conference on Image Processing (ICIP)*'
-publication_short: ''
+publication_short: 'IEEE ICIP 2025'
 
-doi: 10.1109/ICIP55913.2025.11084319
 
 abstract: Masked image modeling (MIM), which is a self-supervised learning method
   in computer vision, excels in image-and video-level recognition tasks by providing
@@ -51,15 +50,26 @@ abstract: Masked image modeling (MIM), which is a self-supervised learning metho
 summary: ''
 
 tags:
-- Training;Computer vision;Image recognition;Limiting;Autoencoders;Object detection;Self-supervised
-  learning;Predictive models;Feature extraction;Transformers;Masked image modeling;Masked
-  autoencoder;Vision Transformer;Dense prediction
+- training
+- computer vision
+- image recognition
+- limiting
+- autoencoders
+- object detection
+- self-supervised learning
+- predictive models
+- feature extraction
+- transformers
+- masked image modeling
+- masked autoencoder
+- vision transformer
+- dense prediction
 
 # Display this page in a list of Featured pages?
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11084319'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -86,6 +96,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
+hugoblox:
+  ids:
+    doi: 10.1109/ICIP55913.2025.11084319
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->
