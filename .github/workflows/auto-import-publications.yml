@@ -23,7 +23,7 @@ jobs:
         run: pip install academic
 
       - name: Run Academic (Bibtex To Markdown Converter)
-        run: academic import publications.bib content/publications/ #--compact # 실제 경로에 맞게 수정
+        run: academic import static/files/publications.bib content/publications/ #--compact # 실제 경로에 맞게 수정
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
