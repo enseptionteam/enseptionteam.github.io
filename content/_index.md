@@ -86,6 +86,8 @@ sections:
           - publications
         exclude_featured: false
       count: 10
+      archive:
+        enable: false
     design:
       view: citation
 
