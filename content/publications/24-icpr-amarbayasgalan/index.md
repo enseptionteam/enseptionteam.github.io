@@ -26,7 +26,7 @@ publication_types:
 
 # Publication name and optional abbreviated publication name.
 publication: '*Pattern Recognition*'
-publication_short: ''
+publication_short: 'ICPR 2024'
 
 
 abstract: Scale imbalance, where objects of different sizes are not equally represented
