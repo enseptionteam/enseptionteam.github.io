@@ -50,9 +50,18 @@ abstract: Recent studies have revealed that visual-auditory sensory substitution
 summary: ''
 
 tags:
-- Visualization;Training;Headphones;Deep learning;Wireless sensor networks;Wireless
-  communication;Sensitivity;Sensor systems;Audio-visual systems;Sensory substitution;visual-auditory
-  conversion;visual perception
+- visualization
+- training
+- headphones
+- deep learning
+- wireless sensor networks
+- wireless communication
+- sensitivity
+- sensor systems
+- audio-visual systems
+- sensory substitution
+- visual-auditory conversion
+- visual perception
 
 # Display this page in a list of Featured pages?
 featured: false
@@ -90,4 +99,4 @@ hugoblox:
     doi: 10.1109/ACCESS.2024.3419102
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

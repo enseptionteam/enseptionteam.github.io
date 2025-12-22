@@ -2,6 +2,7 @@
 title: Enhancing Multiscale Feature Representation For Object-Level Recognition In
   Masked Image Modeling
 
+
 # Authors
 # A YAML list of author names
 # If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
@@ -50,9 +51,20 @@ abstract: Masked image modeling (MIM), which is a self-supervised learning metho
 summary: ''
 
 tags:
-- Training;Computer vision;Image recognition;Limiting;Autoencoders;Object detection;Self-supervised
-  learning;Predictive models;Feature extraction;Transformers;Masked image modeling;Masked
-  autoencoder;Vision Transformer;Dense prediction
+- training
+- computer vision
+- image recognition
+- limiting
+- autoencoders
+- object detection
+- self-supervised learning
+- predictive models
+- feature extraction
+- transformers
+- masked image modeling
+- masked autoencoder
+- vision transformer
+- dense prediction
 
 # Display this page in a list of Featured pages?
 featured: false
@@ -90,4 +102,4 @@ hugoblox:
     doi: 10.1109/ICIP55913.2025.11084319
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

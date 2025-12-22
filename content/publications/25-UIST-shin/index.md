@@ -18,7 +18,7 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-01'
+date: '2025-09-27'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
 publishDate: '2025-12-22T02:48:13.485568Z'
@@ -58,7 +58,7 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3746058.3758996'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -85,9 +85,9 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: URL
-  url: https://doi.org/10.1145/3746058.3758996
+# links:
+# - name: URL
+#   url: https://doi.org/10.1145/3746058.3758996
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->

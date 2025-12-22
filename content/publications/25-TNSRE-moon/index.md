@@ -57,9 +57,18 @@ abstract: The visual sensory organ (VSO) serves as the primary channel for trans
 summary: ''
 
 tags:
-- Visualization;Training;Brain modeling;Neuroplasticity;Biological system modeling;Adaptation
-  models;Image coding;Visual impairment;Auditory system;Sensor systems;Learning model
-  for sensory substitution;neuroplasticity;vision-to-auditory sensory substitution
+- visualization
+- training
+- brain modeling
+- neuroplasticity
+- biological system modeling
+- adaptation models
+- image coding
+- visual impairment
+- auditory system
+- sensor systems
+- learning model for sensory substitution
+- vision-to-auditory sensory substitution
 
 # Display this page in a list of Featured pages?
 featured: false
@@ -97,4 +106,4 @@ hugoblox:
     doi: 10.1109/TNSRE.2025.3548942
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
+<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->
