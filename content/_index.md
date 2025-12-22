@@ -79,7 +79,7 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Publications
+      title: Recent Publications
       text: ''
       filters:
         folders:
@@ -106,9 +106,17 @@ sections:
   #   design:
   #     columns: "1"
  
-  - block: team
-    id: team
 
+  - block: collection
+    id: projects
+    content:
+      title: Projects
+      filters:
+        folders:
+          - projects
+    design:
+      view: article-grid
+      columns: "2"
       
     #   user_groups:
     #     - "Principal Investigators"
@@ -125,15 +133,10 @@ sections:
     #   show_role: true
     #   show_organizations: true
 
-  # - block: collection
-  #   id: talks
-  #   content:
-  #     title: Recent & Upcoming Talks
-  #     filters:
-  #       folders:
-  #         - events
-  #   design:
-  #     view: card
+
+  - block: team
+    id: team
+  
   # - block: collection
   #   id: news
   #   content:
