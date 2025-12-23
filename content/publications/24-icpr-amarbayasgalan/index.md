@@ -71,11 +71,11 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://link.springer.com/chapter/10.1007/978-3-031-78447-7_11'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/visionaugmentation'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -103,4 +103,3 @@ hugoblox:
     doi: https://doi.org/10.1007/978-3-031-78447-7_11
 ---
 
-<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->
