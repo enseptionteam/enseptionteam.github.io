@@ -19,6 +19,8 @@ authors:
   - Hyeju Lee
 
 
+date: 2026-01-01
+
 # all_day: false
 # links:
 #   - type: site
