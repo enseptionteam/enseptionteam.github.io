@@ -58,11 +58,11 @@ tags: []
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://dx.doi.org/10.1080/10447318.2025.2452192'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/musicaccessibility'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -89,5 +89,3 @@ links:
 - name: URL
   url: https://doi.org/10.1080/10447318.2025.2452192
 ---
-
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
