@@ -78,7 +78,7 @@ url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10915707'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/visionaugmentation'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -106,4 +106,3 @@ hugoblox:
     doi: 10.1109/TNSRE.2025.3548942
 ---
 
-<!-- Add the **full text** or **supplementary notes** for the publication here using Markdown formatting. -->
