@@ -45,11 +45,11 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/document/10041118'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/visionaugmentation'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -73,5 +73,3 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 ---
-
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
