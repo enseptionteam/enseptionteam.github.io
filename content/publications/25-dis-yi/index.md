@@ -67,7 +67,7 @@ tags:
 featured: false
 
 # Links
-url_pdf: 'https://dx.doi.org/10.1080/10447318.2025.2452192'
+url_pdf: 'https://doi.org/10.1145/3715336.3735757'
 url_code: ''
 url_dataset: ''
 url_poster: ''
