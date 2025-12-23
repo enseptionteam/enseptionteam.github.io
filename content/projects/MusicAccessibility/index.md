@@ -13,7 +13,7 @@ authors:
   - Hyeonbeom Yi
 
 
-# date: 2023-10-26
+date: 2025-01-01
 # links:
 #   - type: site
 #     url: https://github.com/pandas-dev/pandas
