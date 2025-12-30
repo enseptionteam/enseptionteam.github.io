@@ -13,10 +13,10 @@ appearance:
 # SEO
 marketing:
   seo:
-    site_type: Person
+    site_type: Organization
     local_business_type: ''
-    org_name: ''
-    description: ''
+    org_name: 'EnSeption'
+    description: 'EnSeption team at ETRI'
     twitter: ''
   analytics:
     google_analytics: ''
@@ -52,7 +52,7 @@ footer:
 # Localization
 locale:
   date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  time_format: '15:04'
 
 # Site features
 features:
