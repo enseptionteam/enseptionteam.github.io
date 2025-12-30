@@ -15,7 +15,7 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-01'
+date: '2024-05-02'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
 publishDate: '2025-12-23T07:18:47.547641Z'
@@ -31,7 +31,7 @@ publication_short: ''
 
 doi: https://doi.org/10.4218/etrij.2023-0430
 
-abstract: Abstract Pitch estimation is the task of finding the most conspicuous frequency
+abstract: Pitch estimation is the task of finding the most conspicuous frequency
   in a complex audio signal. Many methods that use deep neural networks have significantly
   increased the accuracy of pitch estimation; however, their real-time performance
   results were achieved on high-performance devices. Because pitch estimation is widely
@@ -61,7 +61,7 @@ tags:
 featured: false
 
 # Links
-url_pdf: 'https://doi.org/10.4218/etrij.2023-0430'
+url_pdf: 'https://onlinelibrary.wiley.com/doi/epdf/10.4218/etrij.2023-0430'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -88,7 +88,7 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: URL
-  url: https://onlinelibrary.wiley.com/doi/abs/10.4218/etrij.2023-0430
+# links:
+# - name: URL
+#   url: https://onlinelibrary.wiley.com/doi/abs/10.4218/etrij.2023-0430
 ---

@@ -19,7 +19,7 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-01'
+date: '2025-07-04'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
 publishDate: '2025-12-23T07:09:08.685994Z'
@@ -31,7 +31,7 @@ publication_types:
 
 # Publication name and optional abbreviated publication name.
 publication: '*Proceedings of the 2025 ACM Designing Interactive Systems Conference*'
-publication_short: ''
+publication_short: 'ACM DIS 2025'
 
 doi: 10.1145/3715336.3735757
 
@@ -94,7 +94,5 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: URL
-  url: https://doi.org/10.1145/3715336.3735757
+
 ---

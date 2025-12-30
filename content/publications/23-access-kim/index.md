@@ -15,7 +15,7 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2023-01-01'
+date: '2023-02-09'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
 publishDate: '2025-12-23T07:42:51.974379Z'
@@ -31,15 +31,23 @@ publication_short: ''
 
 doi: 10.1109/ACCESS.2023.3243641
 
-abstract: ''
+abstract: 'Visual–auditory sensory substitution systems can aid visually impaired people in traveling to various places and recognizing their own environments without help from others. Although several such systems have been developed, they are either not widely used or are limited to laboratory-scale research. Among various factors that hinder the widespread use of these systems, one of the most important issues to consider is the optimization of the algorithms for sensory substitution. This study is the first attempt at exploring the possibility of using deep learning for the objective quantification of sensory substitution. To this end, we used generative adversarial networks to investigate the possibility of optimizing the vOICe algorithm, a representative visual–auditory sensory substitution method, by controlling the parameters of the method for converting an image to sound. Furthermore, we explored the effect of the parameters on the conversion scheme for the vOICe system and performed frequency-range and frequency-mapping-function experiments. The process of sensory substitution in humans was modeled to use generative models to assess the extent of visual perception from the substituted sensory signals. We verified the human-based experimental results against the modeling results. The results suggested that deep learning could be used for evaluating the efficiency of algorithms for visual–auditory sensory substitutions without labor-intensive human behavioral experiments. The introduction of deep learning for optimizing the visual–auditory conversion method is expected to facilitate studies on various aspects of sensory substitution, such as generalization and estimation of algorithm efficiency.'
 
 # Summary. An optional shortened abstract.
 summary: ''
 
 tags:
-- Visualization;Behavioral sciences;Deep learning;Frequency conversion;Visual perception;Optimization;Image
-  color analysis;Cross-modal perception;generative adversarial network;sensory substitution;visual
-  perception
+- Visualization
+- Behavioral sciences
+- Deep learning
+- Frequency conversion
+- Visual perception
+- Optimization
+- Image color analysis
+- Cross-modal perception
+- generative adversarial network
+- sensory substitution
+- visual perception
 
 # Display this page in a list of Featured pages?
 featured: false

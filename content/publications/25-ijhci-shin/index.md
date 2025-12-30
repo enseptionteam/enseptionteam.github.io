@@ -18,7 +18,7 @@ authors:
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2025-01-01'
+date: '2025-02-05'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
 publishDate: '2025-12-23T07:09:08.697225Z'
@@ -52,7 +52,15 @@ abstract: ' The perception of pitch and engagement in melodic singing significan
 # Summary. An optional shortened abstract.
 summary: ''
 
-tags: []
+tags:
+- wearable system
+- sensory substitution
+- multisensory integration
+- vibrotactile feedback
+- hard-of-hearing
+- music accessibility
+- singing
+- pitch perception
 
 # Display this page in a list of Featured pages?
 featured: false
@@ -85,7 +93,5 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-links:
-- name: URL
-  url: https://doi.org/10.1080/10447318.2025.2452192
+
 ---
