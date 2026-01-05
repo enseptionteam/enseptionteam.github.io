@@ -12,10 +12,13 @@ groups:
       - wsungjun
       - yhyeonbeom
       - kmyungjin
+      - kseohee
   - id: students
     title: "Students"
     members:
       - lhyeju
+      - jayeong
+      - jsungeun
 
 people:
   jchiyoon:
@@ -126,12 +129,32 @@ people:
       - url: "https://ksp.etri.re.kr/ksp/user/41208274-fae4-45da-b76d-f2127da30a01" 
         label: "ETRI-KSP"
     
+  kseohee:
+    name: "Kim, Seohee"
+    role: "Researcher"
+    avatar: "images/team/kseohee.png"
+    profiles:
+      - url: "https://ksp.etri.re.kr/ksp/user/88caafeb-0b88-4049-a1be-61ca91644386" 
+        label: "ETRI-KSP"
     
+
 
   lhyeju:
     name: "Lee, Hyeju"
-    role: "UST Research Student"
+    role: "UST Student Researcher"
     avatar: "images/team/lhyeju.png"
     profiles:
       - url: "https://ksp.etri.re.kr/ksp/user/513b4a39-0fe1-4004-9088-a65d289ff70b" 
         label: "ETRI-KSP"
+
+  jayeong:
+    name: "Jeong, Ayeong"
+    role: "Research Intern"
+    avatar: "images/team/jayeong.png"
+    profiles:
+
+  jsungeun:
+    name: "Jo, Sungeun"
+    role: "Research Intern"
+    avatar: "images/team/jsungeun.png"
+    profiles:

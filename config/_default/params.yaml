@@ -42,7 +42,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} EnSeption. This work is licensed under {license}'
+    notice: '© 2025-{year} EnSeption. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
