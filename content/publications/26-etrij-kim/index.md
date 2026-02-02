@@ -60,11 +60,11 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
+url_pdf: 'https://onlinelibrary.wiley.com/doi/epdf/10.4218/etrij.2025-0201'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
+url_project: 'projects/visionaugmentation'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -91,5 +91,3 @@ links:
 - name: URL
   url: https://onlinelibrary.wiley.com/doi/abs/10.4218/etrij.2025-0201
 ---
-
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
