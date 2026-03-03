@@ -4,10 +4,15 @@ title: Publications
 cms_exclude: true
 
 build:
-  list: never
-  publishResources: false
-  render: never
+  render: always
+  list: always
 
+cascade:
+  - _target:
+      kind: page
+    build:
+      render: never
+      publishResources: true
 
 # View.
 view: citation

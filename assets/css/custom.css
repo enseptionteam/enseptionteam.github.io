@@ -1,0 +1,9 @@
+/* Widen the abstract metadata block on project detail pages */
+article main > div.max-w-prose.grid {
+  max-width: 72rem;
+}
+
+/* Add readable paragraph spacing inside the project abstract text */
+article main > div.max-w-prose.grid p + p {
+  margin-top: 1rem;
+}

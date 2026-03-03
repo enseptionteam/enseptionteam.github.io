@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: Enhancing Pitch Perception and Melodic Reproduction of Hard-of-Hearing Individuals
   Using a Vibrotactile Glove
 

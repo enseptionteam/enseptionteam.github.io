@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: 'Improving Acceptance to Sensory Substitution: A Study on the V2A-SS Learning
   Model Based on Information Processing Learning Theory'
 

@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="text-4xl lg:text-5xl">{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</div>
+
+{{ $view := "citation" }}
+{{ $block := . }}
+{{ $pages := .Pages.ByDate.Reverse }}
+{{ $config := dict
+  "columns" 1
+  "len" (len $pages)
+  "fill_image" false
+  "show_date" true
+  "show_read_time" false
+  "show_read_more" false
+}}
+
+<div class="flex flex-col items-center px-6">
+  <div class="mt-10 sm:mt-12 container max-w-3xl w-full">
+    {{ range $yearGroup := ($pages.GroupByDate "2006" "desc") }}
+      <h2 class="mt-8 mb-4 text-3xl font-bold text-gray-900 dark:text-white">{{ $yearGroup.Key }}</h2>
+      <div class="flex flex-col space-y-3">
+        {{ range $index, $item := $yearGroup.Pages }}
+          {{ partial (printf "views/%s" $view) (dict "page" $block "item" $item "index" $index "config" $config) }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

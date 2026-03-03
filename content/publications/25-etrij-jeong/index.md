@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: Efficient pitch-estimation network for edge devices
 
 # Authors
@@ -29,7 +35,7 @@ publication_types:
 publication: '*ETRI Journal*'
 publication_short: ''
 
-doi: https://doi.org/10.4218/etrij.2023-0430
+doi: 10.4218/etrij.2023-0430
 
 abstract: Pitch estimation is the task of finding the most conspicuous frequency
   in a complex audio signal. Many methods that use deep neural networks have significantly

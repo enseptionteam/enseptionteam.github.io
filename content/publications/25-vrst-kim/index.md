@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: 'Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training
   System for Users With Visual Impairment Using the vOICe Algorithm'
 

@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: An Improved YOLOF for Scale Imbalance with Dilated Attention
 
 # Authors
@@ -100,6 +106,6 @@ image:
 projects: []
 hugoblox:
   ids:
-    doi: https://doi.org/10.1007/978-3-031-78447-7_11
+    doi: 10.1007/978-3-031-78447-7_11
 ---
 

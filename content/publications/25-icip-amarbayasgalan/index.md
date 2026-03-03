@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: Enhancing Multiscale Feature Representation For Object-Level Recognition In
   Masked Image Modeling
 

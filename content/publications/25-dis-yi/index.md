@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: 'Toward More Inclusive Music Experience: Understanding Deaf and Hard-of-hearing
   Individuals’ Everyday Music Activities'
 

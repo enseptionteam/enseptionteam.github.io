@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: Operation-level scheduling framework for efficient deep learning inference
   on embedded systems using directed acyclic graphs
 
@@ -30,7 +36,7 @@ publication_types:
 publication: '*ETRI Journal*'
 publication_short: ''
 
-doi: https://doi.org/10.4218/etrij.2025-0201
+doi: 10.4218/etrij.2025-0201
 
 abstract: 'Abstract This study presents an operation-level scheduling framework for
   efficient deep learning inference on heterogeneous embedded systems. Motivated by

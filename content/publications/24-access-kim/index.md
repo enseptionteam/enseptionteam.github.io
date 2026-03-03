@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: 'Impact of Device and Environment on Visual-Auditory Sensory Substitution:
   A Comprehensive Behavioral Analysis Using the vOICe Algorithm'
 

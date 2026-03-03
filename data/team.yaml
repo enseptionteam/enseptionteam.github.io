@@ -17,6 +17,9 @@ groups:
     title: "Students"
     members:
       - lhyeju
+  - id: pastMembers
+    title: "Past Members"
+    members:
       - jayeong
       - jsungeun
 
@@ -151,12 +154,12 @@ people:
 
   jayeong:
     name: "Jeong, Ayeong"
-    role: "Research Intern"
-    avatar: "images/team/jayeong.png"
+    role: "2026 Winter Research Intern"
+#    avatar: "images/team/jayeong.png"
     profiles:
 
   jsungeun:
     name: "Jo, Sungeun"
-    role: "Research Intern"
-    avatar: "images/team/jsungeun.png"
+    role: "2026 Winter Research Intern"
+#    avatar: "images/team/jsungeun.png"
     profiles:

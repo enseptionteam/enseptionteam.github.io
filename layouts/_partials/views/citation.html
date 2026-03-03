@@ -1,0 +1,63 @@
+{{ $item := .item }}
+
+{{/* Resolve DOI from current or legacy fields */}}
+{{ $doi := "" }}
+{{ with $item.Params.hugoblox }}
+  {{ with .ids }}
+    {{ with .doi }}
+      {{ $doi = . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if and (not $doi) $item.Params.doi }}
+  {{ $doi = $item.Params.doi }}
+{{ end }}
+
+{{ $doiURL := "" }}
+{{ if $doi }}
+  {{ $doiLower := lower $doi }}
+  {{ if or (hasPrefix $doiLower "http://") (hasPrefix $doiLower "https://") }}
+    {{ $doiURL = $doi }}
+  {{ else }}
+    {{ $doiURL = printf "https://doi.org/%s" $doi }}
+  {{ end }}
+{{ end }}
+
+{{/* Render authors in ACM-like style: A, B, C, and D */}}
+{{ $authors := $item.Params.authors | default (slice) }}
+{{ $authorCount := len $authors }}
+{{ $authorText := "" }}
+{{ if eq $authorCount 1 }}
+  {{ $authorText = index $authors 0 }}
+{{ else if eq $authorCount 2 }}
+  {{ $authorText = printf "%s and %s" (index $authors 0) (index $authors 1) }}
+{{ else if gt $authorCount 2 }}
+  {{ range $i, $a := $authors }}
+    {{ if eq $i 0 }}
+      {{ $authorText = printf "%s" $a }}
+    {{ else if eq $i (sub $authorCount 1) }}
+      {{ $authorText = printf "%s, and %s" $authorText $a }}
+    {{ else }}
+      {{ $authorText = printf "%s, %s" $authorText $a }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $venue := "" }}
+{{ if $item.Params.publication_short }}
+  {{ $venue = $item.Params.publication_short | markdownify | plainify }}
+{{ else if $item.Params.publication }}
+  {{ $venue = $item.Params.publication | markdownify | plainify }}
+{{ end }}
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1.1rem; line-height: 1.55;">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span>{{ if $authorText }}{{ $authorText }}. {{ end }}{{ $item.Date.Format "2006" }}.</span>
+  {{ if $doiURL }}
+    <a href="{{ $doiURL }}" target="_blank" rel="noopener noreferrer" class="underline" style="font-weight: 400; text-decoration-thickness: 2px;">{{ $item.Title }}</a>.
+  {{ else }}
+    <span style="font-weight: 400;">{{ $item.Title }}</span>.
+  {{ end }}
+  <span style="font-weight: 700; font-style: normal;">{{ $venue }}</span>.
+  {{ if $doiURL }}<a href="{{ $doiURL }}" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-left: 0.35rem; font-style: normal; text-decoration: none;">{{ $doiURL }}</a>{{ end }}
+</div>

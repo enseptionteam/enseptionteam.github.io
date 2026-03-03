@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: Deep Learning-Based Optimization of Visual–Auditory Sensory Substitution
 
 # Authors

@@ -1,4 +1,10 @@
 ---
+build:
+  render: never
+  publishResources: true
+
+outputs: []
+
 title: Haptic Music Feedback through Audio Decomposition
 
 # Authors

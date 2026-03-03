@@ -87,7 +87,9 @@ sections:
         exclude_featured: false
       count: 10
       archive:
-        enable: false
+        enable: true
+        link : "publications/"
+        text : "See All Publications"
     design:
       view: citation
 
