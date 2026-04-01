@@ -13,6 +13,7 @@ groups:
       - yhyeonbeom
       - kmyungjin
       - kseohee
+      - khanvit
   - id: students
     title: "Students"
     members:
@@ -142,6 +143,17 @@ people:
       - url: "https://scholar.google.com/citations?user=GREgmb4AAAAJ&sortby=pubdate"
         label: "Google Scholar"
     
+  khanvit:
+    name: "Kim, Hanvit"
+    role: "Senior Researcher"
+    avatar: "images/team/khanvit.png"
+    profiles:
+      - url: "https://ksp.etri.re.kr/ksp/user/47014033-135d-48e7-9101-e38a239256fa" 
+        label: "ETRI-KSP"
+      - url: "https://scholar.google.com/citations?user=Cy7lruUAAAAJ&sortby=pubdate"
+        label: "Google Scholar"
+      - url: "https://orcid.org/0000-0002-7326-7297" 
+        label: "ORCiD"
 
 
   lhyeju:
