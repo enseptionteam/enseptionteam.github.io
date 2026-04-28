@@ -16,6 +16,7 @@ tags:
   - Conference
 content_meta:
   trending: true
+share: false
 
 ---
 

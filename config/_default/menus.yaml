@@ -10,16 +10,16 @@
   - name: Publications
     url: /#publications
     weight: 11
+  - name: News
+    url: /#news
+    weight: 12
+  # - name: Experience
   - name: Projects
     url: /#projects
-    weight: 12
+    weight: 13
   - name: Team
     url: /#team
-    weight: 13
-  # - name: News
-  #   url: /#news
-  #   weight: 13
-  # - name: Experience
+    weight: 14
   #   url: experience/
   #   weight: 20
   # - name: Projects
