@@ -71,3 +71,5 @@ This workshop is part of our project, [Research on a Neuroplasticity-Based Adapt
 
 In that sense, the workshop extends the project's core question: how insights from virtual embodiment can be translated into practical control and feedback strategies for real wearable robotic systems. It also reflects the broader collaborative direction of our work on extended artificial bodies, embodiment, and adaptive human-robot interaction.
 
+>[!Note]Workshop Paper:  https://doi.org/10.1145/3772363.3778688
+
