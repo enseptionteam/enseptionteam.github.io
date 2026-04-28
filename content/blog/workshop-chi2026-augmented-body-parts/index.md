@@ -1,8 +1,7 @@
 ---
 title: "Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics at
   CHI 2026"
-summary: Take full control of your personal brand and privacy by migrating away
-  from the big tech platforms!
+summary: CHI 2026 Workshop on Augmented Body Parts Successfully Concluded
 date: 2026-04-15T05:15:00.000Z
 image:
   caption: "[W7: Augmented Body Parts: Bridging VR Embodiment and Wearable
