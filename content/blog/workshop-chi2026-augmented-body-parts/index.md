@@ -19,13 +19,24 @@ content_meta:
 
 ---
 
-On April 15, 2026, at CHI 2026 in Barcelona, we organized the workshop [*Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics*](https://sites.google.com/view/augmented-body-parts). As members of the EnSeption team at ETRI, HyeonBeom Yi and Myung Jin (MJ) Kim organized the workshop together with collaborators across China, the Republic of Korea, Japan, Australia, Germany, and the United Kingdom. Our goal was to bring together researchers in XR, wearable robotics, haptics, and neuroHCI to discuss how insights from virtual embodiment can inform the design of real wearable robotic augmentation.
+On April 15, 2026, at CHI 2026 in Barcelona, we organized the workshop [*Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics*](https://sites.google.com/view/augmented-body-parts). As members of the EnSeption team at ETRI, HyeonBeom Yi and Myung Jin (MJ) Kim organized the workshop together with collaborators across China, the Republic of Korea, Japan, Australia, Germany, and the United Kingdom. 
+
+> [!Tip]Workshop Purpose
+Our goal was to bring together researchers in XR, wearable robotics, haptics, and neuroHCI to discuss how insights from virtual embodiment can inform the design of real wearable robotic augmentation.
 
 ## Overview
 
 The workshop was built around a clear research gap. Studies in virtual embodiment have shown that people can develop agency and ownership over non-standard body forms, while wearable robotics research has introduced systems such as third arms and robotic tails. However, findings from VR do not automatically translate to hardware, because the two settings differ in sensory feedback, physical constraints, and interaction context.
 
 To address that gap, we designed the workshop to connect these two research directions and to articulate a clearer path from exploratory virtual studies to practical on-body implementations.
+
+
+## Keynote
+
+The workshop featured a keynote by Prof. Masahiko Inami, Research Center for Advanced Science and Technology, The University of Tokyo, Japan. His work on augmented humans and information somatics provided an important frame for discussions of embodiment, body extension, and human adaptation.
+
+{{< figure src="keynote.jpg" caption="Prof. Masahiko Inami (The University of Tokyo) delivering the keynote at our CHI 2026 workshop." alt="Keynote by Prof. Masahiko Inami at CHI 2026 workshop" >}}
+
 
 ## Core Themes
 
@@ -37,7 +48,6 @@ The discussion centered on two complementary themes:
 Through a keynote, short position-sharing sessions, and hands-on group activities, the workshop worked toward a focused research agenda for augmented body parts that spans both virtual experimentation and real-world robotic augmentation.
 
 {{< figure src="discussion.jpg" caption="Active group discussion between participants during our workshop." alt="Discussion between participants" >}}
-
 
 ## Organizing Team
 
@@ -55,15 +65,9 @@ This workshop was organized through an international, multi-institutional collab
 
 {{< figure src="organizers.jpg" caption="HyeonBeom Yi introducing the Workshop organizers at our workshop." alt="Introducing our Workshop organizers" >}}
 
-## Keynote
-
-The workshop featured a keynote by Prof. Masahiko Inami, Research Center for Advanced Science and Technology, The University of Tokyo, Japan. His work on augmented humans and information somatics provided an important frame for discussions of embodiment, body extension, and human adaptation.
-
-{{< figure src="keynote.jpg" caption="Prof. Masahiko Inami (The University of Tokyo) delivering the keynote at our CHI 2026 workshop." alt="Keynote by Prof. Masahiko Inami at CHI 2026 workshop" >}}
-
-
 ## Related Project
 
 This workshop is part of our project, [Research on a Neuroplasticity-Based Adaptive Control Interface for Embodiment of Extended Artificial Bodies](/projects/ArtificialLimb/) led by HyeonBeom Yi. The project investigates adaptive control interfaces for wearable robotic body extensions such as a third arm or a tail, with an initial emphasis on VR simulation to study control strategies, embodiment, and user adaptation before moving to physical hardware.
 
 In that sense, the workshop extends the project's core question: how insights from virtual embodiment can be translated into practical control and feedback strategies for real wearable robotic systems. It also reflects the broader collaborative direction of our work on extended artificial bodies, embodiment, and adaptive human-robot interaction.
+
