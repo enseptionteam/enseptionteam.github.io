@@ -67,7 +67,7 @@ This workshop was organized through an international, multi-institutional collab
 
 ## Related Project
 
-This workshop is part of our project, [Research on a Neuroplasticity-Based Adaptive Control Interface for Embodiment of Extended Artificial Bodies](/projects/ArtificialLimb/) led by HyeonBeom Yi. The project investigates adaptive control interfaces for wearable robotic body extensions such as a third arm or a tail, with an initial emphasis on VR simulation to study control strategies, embodiment, and user adaptation before moving to physical hardware.
+This workshop is part of our project, [Research on a Neuroplasticity-Based Adaptive Control Interface for Embodiment of Extended Artificial Bodies](/projects/artificiallimb/) led by HyeonBeom Yi. The project investigates adaptive control interfaces for wearable robotic body extensions such as a third arm or a tail, with an initial emphasis on VR simulation to study control strategies, embodiment, and user adaptation before moving to physical hardware.
 
 In that sense, the workshop extends the project's core question: how insights from virtual embodiment can be translated into practical control and feedback strategies for real wearable robotic systems. It also reflects the broader collaborative direction of our work on extended artificial bodies, embodiment, and adaptive human-robot interaction.
 
