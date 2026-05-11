@@ -1,8 +1,7 @@
 ---
 title: "Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics at
   CHI 2026"
-summary: Take full control of your personal brand and privacy by migrating away
-  from the big tech platforms!
+summary: CHI 2026 Workshop on Augmented Body Parts Successfully Concluded
 date: 2026-04-15T05:15:00.000Z
 image:
   caption: "[W7: Augmented Body Parts: Bridging VR Embodiment and Wearable
@@ -16,6 +15,7 @@ tags:
   - Conference
 content_meta:
   trending: true
+share: false
 
 ---
 
@@ -67,7 +67,9 @@ This workshop was organized through an international, multi-institutional collab
 
 ## Related Project
 
-This workshop is part of our project, [Research on a Neuroplasticity-Based Adaptive Control Interface for Embodiment of Extended Artificial Bodies](/projects/ArtificialLimb/) led by HyeonBeom Yi. The project investigates adaptive control interfaces for wearable robotic body extensions such as a third arm or a tail, with an initial emphasis on VR simulation to study control strategies, embodiment, and user adaptation before moving to physical hardware.
+This workshop is part of our project, [Research on a Neuroplasticity-Based Adaptive Control Interface for Embodiment of Extended Artificial Bodies](/projects/artificiallimb/) led by HyeonBeom Yi. The project investigates adaptive control interfaces for wearable robotic body extensions such as a third arm or a tail, with an initial emphasis on VR simulation to study control strategies, embodiment, and user adaptation before moving to physical hardware.
 
 In that sense, the workshop extends the project's core question: how insights from virtual embodiment can be translated into practical control and feedback strategies for real wearable robotic systems. It also reflects the broader collaborative direction of our work on extended artificial bodies, embodiment, and adaptive human-robot interaction.
+
+>[!Note]Workshop Paper:  https://doi.org/10.1145/3772363.3778688
 

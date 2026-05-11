@@ -76,7 +76,7 @@ tags:
 featured: false
 
 # Links
-url_pdf: 'https://doi.org/10.1145/3772363.3778688'
+url_pdf: 'https://doi.org/pdf/10.1145/3772363.3778688'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -103,10 +103,10 @@ image:
 #   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []
-hugoblox:
-  ids:
-    doi: 10.1145/3772363.3778688
-links:
-- name: URL
-  url: https://doi.org/10.1145/3772363.3778688
+# hugoblox:
+#   ids:
+#     doi: 10.1145/3772363.3778688
+# links:
+# - name: URL
+#   url: https://doi.org/10.1145/3772363.3778688
 ---
