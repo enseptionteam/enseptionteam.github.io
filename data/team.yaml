@@ -18,6 +18,8 @@ groups:
     title: "Students"
     members:
       - lhyeju
+      - pminseok
+      - pjisung
   - id: pastMembers
     title: "Past Members"
     members:
@@ -163,6 +165,21 @@ people:
     profiles:
       - url: "https://ksp.etri.re.kr/ksp/user/513b4a39-0fe1-4004-9088-a65d289ff70b" 
         label: "ETRI-KSP"
+
+
+  pminseok:
+    name: "Park, Minseok"
+    role: "2026 Summer Research Intern"
+    avatar: "images/team/pminseok.png"
+    profiles:
+
+  pjisung:
+    name: "Park, Jisung"
+    role: "2026 Summer Research Intern"
+    avatar: "images/team/pjisung.png"
+    profiles:
+
+
 
   jayeong:
     name: "Jeong, Ayeong"
