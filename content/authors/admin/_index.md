@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Human Sensory Augmentation Research Section
+role: Sensory-Perception AX Research Section
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
