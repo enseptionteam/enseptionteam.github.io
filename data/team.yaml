@@ -18,6 +18,13 @@ groups:
     title: "Students"
     members:
       - lhyeju
+
+  - id: visiting
+    title: "Visiting"
+    members: 
+      - gjunhyeong
+      - kyuri
+
   - id: pastMembers
     title: "Past Members"
     members:
@@ -167,28 +174,38 @@ people:
         label: "ETRI-KSP"
 
 
-
-
+  gjunhyeong:
+    name: "Go, Junhyeong"
+    role: "Visiting Researcher"
+    avatar: "images/team/gjunhyeong.png"
+    profiles:
+    
+  kyuri:
+    name: "Kim, Yuri"
+    role: "Visiting Researcher"
+    avatar: "images/team/kyuri.png"
+    profiles:
+    
   pminseok:
     name: "Park, Minseok"
-    role: "2026 Summer Research Intern"
+    role: "Research Intern, Summer 2026"
 #    avatar: "images/team/pminseok.png"
     profiles:
 
   pjisung:
     name: "Park, Jisung"
-    role: "2026 Summer Research Intern"
+    role: "Research Intern, Summer 2026"
 #    avatar: "images/team/pjisung.png"
     profiles:
 
   jayeong:
     name: "Jeong, Ayeong"
-    role: "2026 Winter Research Intern"
+    role: "Research Intern, Winter 2026"
 #    avatar: "images/team/jayeong.png"
     profiles:
 
   jsungeun:
     name: "Jo, Sungeun"
-    role: "2026 Winter Research Intern"
+    role: "Research Intern, Winter 2026"
 #    avatar: "images/team/jsungeun.png"
     profiles:
