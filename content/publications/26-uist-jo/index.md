@@ -25,7 +25,7 @@ publication_types:
 - paper-conference
 
 publication: '*Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology*'
-publication_short: 'ACM UIST 2026'
+publication_short: 'ACM UIST 2026 (Poster)'
 
 doi: ''
 
