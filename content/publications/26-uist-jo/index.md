@@ -60,10 +60,21 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
+# Preprint link (disambiguates from the official ACM link once released)
+links:
+- type: preprint
+  label: PREPRINT
+  url: 'https://arxiv.org/abs/2609.06044'
+  icon: brands/arxiv
+
 image:
   caption: ''
   focal_point: ''
   preview_only: false
 
 projects: []
+
+hugoblox:
+  ids:
+    doi: 10.1145/3830397.3841791
 ---
