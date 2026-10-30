@@ -1,0 +1,9 @@
+@inproceedings{26-MASS-kim,
+ abstract = {Model pruning is widely used to reduce the parameter count and FLOPs of deep neural networks, but its system-level effects in edge AI remain unclear. In multi-node edge deployments, overall performance is often dominated by communication and tail latency rather than mean computation time. This paper revisits structured pruning from a system-level perspective through measurement-driven experiments on four commodity embedded platforms and trace-driven multi-node analysis using four convolutional neural network architectures. Rather than proposing another pruning algorithm, this paper asks whether pruning changes the bottlenecks that govern deployed edge AI systems, including tail latency, scalability limits, and fleet-wide model-update traffic. Our results show that, despite substantial reductions in FLOPs and parameter counts, inference-latency improvements remain limited to 5-7% on the evaluated commodity embedded platforms, indicating that the algorithmic reductions are only weakly reflected in end-to-end runtime. These modest single-node gains do not meaningfully reduce tail latency or improve scalability in multi-node settings. In contrast, pruning reduces over-the-air (OTA) update traffic almost linearly with the pruning ratio, achieving 50-62% transmission savings at high pruning levels, independent of sparse-runtime support. These findings suggest that, on the evaluated platforms and software stack, pruning is more reliable as a communication-oriented optimization than as a latency optimization.},
+ author = {Kim, Mooseop and Jeong, Chi Yoon and Choi, SuGil},
+ booktitle = {2026 IEEE 23rd International Conference on Mobile Ad-Hoc and Smart Systems (MASS)},
+ doi = {10.1109/MASS71041.2026.00048},
+ title = {Revisiting Pruning for Edge AI: Latency, Scalability, and OTA Update Costs},
+ url = {https://doi.org/10.1109/MASS71041.2026.00048},
+ year = {2026}
+}
