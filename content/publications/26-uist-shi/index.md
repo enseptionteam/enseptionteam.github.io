@@ -31,7 +31,22 @@ publication_short: 'ACM UIST 2026'
 
 doi: ''
 
-abstract: ''
+abstract: >-
+  Previous research has investigated string-based systems that bridge the
+  fingertips and head-mounted displays (HMDs) to provide physical support
+  when users reach out to click in virtual reality (VR). These systems rely
+  only on a low-cost, simple passive string and have demonstrated exemplary
+  performance. However, the limited hand movement range may restrict
+  interaction space. We explored the use of remapping to overcome
+  interaction in physical constraints, thereby supporting a wider range of
+  scenarios. While users move on the spherical surface defined by the
+  string, interactions can be mapped to virtual screens with positions and
+  sizes different from the physical layout. We conducted studies to identify
+  optimized designs that enhance user performance and satisfaction across
+  various screen usage contexts, including physical interaction positions
+  and cross-screen tasks. Finally, we demonstrate how the proposed method
+  enables various scenarios in applications and discuss its potential use
+  cases.
 
 summary: ''
 
